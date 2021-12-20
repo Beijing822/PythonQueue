@@ -1,0 +1,70 @@
+
+import numpy as np
+# teller name
+queue_dict = {'Angel':[],
+              'Mellysa':[],
+              'David':[],
+              'Thom':[],
+              'Monica':[]
+              }
+#customer queue
+customer_name_list = []
+queue_no = 0
+while True:
+    queue_no += 1
+
+#print Queue Number and input queue number
+    print(f"Queue No {len(customer_name_list)+1}")
+    customer_name = input("Enter Customer Name: ")
+    if customer_name == '':
+        break
+
+#Find the teller that has lowest number of queue
+    lowest_queue = np.inf
+    for teller_name, customers_queue in queue_dict.items():
+        if len(customers_queue)<lowest_queue:
+            lowest_queue = len(customers_queue)
+            chosen_teller = teller_name
+
+# Get the customer on the queue of the chosen teller
+    queue_dict[chosen_teller].append(customer_name)
+
+# List to store customer name and get the order of the customer
+    customer_name_list.append(customer_name)
+
+
+
+# print customer which go to the teller name
+    print(f"{Beijing}, please go the teller {chosen_teller}")
+    print()
+
+# print customer which go to the teller name
+    print(f"{John}, please go the teller {chosen_teller}")
+    print()
+
+
+# print customer which go to the teller name
+    print(f"{Chris}, please go the teller {chosen_teller}")
+    print()
+
+# print customer which go to the teller name
+    print(f"{Alexa}, please go the teller {chosen_teller}")
+    print()
+
+
+# print customer which go to the teller name
+    print(f"{Madison}, please go the teller {chosen_teller}")
+    print()
+
+#print Customer had been queued
+print(f"The List customer had been queued in this day : {customer_name_list}")
+['Beijing', 'John', 'Chris', 'Alexa', 'Madison']
+
+#get to Know the first customer
+print(f"The First C#atau bisa j#get to know the last customer
+#print(f"The Last Customers today is {customer_name_list[-1]}")
+
+#atau bisa juga menggunakan
+print(f"The last customer in this day is {customer_name_list[-1]}")uga menggunakan
+print(f"The first customer in this day is {customer_name_list[0]}")ustomers today is {customer_name_list[0]}")
+The First Customers today is JuandaThe last customer in this day is Nazwa
